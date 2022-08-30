@@ -12,21 +12,21 @@ void main() {
   String? chemistryMarks = stdin.readLineSync();
   String? physicsMarks = stdin.readLineSync();
   String? pakistanStudiesMarks = stdin.readLineSync();
-  int obtainedMarks = (int.parse(urduMarks!) +
-      int.parse(mathMarks!) +
-      int.parse(englishMarks!) +
-      int.parse(sindhiMarks!) +
-      int.parse(biologyMarks!) +
-      int.parse(islamiatMarks!) +
-      int.parse(chemistryMarks!) +
-      int.parse(physicsMarks!) +
-      int.parse(pakistanStudiesMarks!));
+  double obtainedMarks = (double.parse(urduMarks!) +
+      double.parse(mathMarks!) +
+      double.parse(englishMarks!) +
+      double.parse(sindhiMarks!) +
+      double.parse(biologyMarks!) +
+      double.parse(islamiatMarks!) +
+      double.parse(chemistryMarks!) +
+      double.parse(physicsMarks!) +
+      double.parse(pakistanStudiesMarks!));
   num totalMarks = 900;
   double percentage = (obtainedMarks / totalMarks * 100);
   print(studentName! +
       ' ' +
       studentFatherName! +
       ' got ' +
-      percentage.toString().replaceRange(2, null, '') +
+      percentage.toString().replaceRange(3, null, '') +
       '%');
 }
